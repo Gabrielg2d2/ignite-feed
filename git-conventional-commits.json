@@ -15,7 +15,7 @@
     "commitScopes": [],
     "releaseTagGlobPattern": "v[0-9]*.[0-9]*.[0-9]*",
     "issueRegexPattern": "(^|\\s)#\\d+(\\s|$)",
-    "commitRegexPattern": "^(\\w*)(?:\\((.*)\\))?!?: [0-9]+ (.*)$"
+    "commitRegexPattern": "^(\\w*)(?:\\((.*)\\))?!?: [ ]?[A-Z0-9]+-[0-9]+.{3,}$"
   },
 
   "changelog": {
@@ -23,7 +23,7 @@
     "includeInvalidCommits": true,
     "commitScopes": [],
     "commitIgnoreRegexPattern": "^WIP ",
-    "commitRegexPattern": "^(\\w*)(?:\\((.*)\\))?!?: [0-9]+ (.*)$",
+    "commitRegexPattern": "^(\\w*)(?:\\((.*)\\))?!?: [ ]?[A-Z0-9]+-[0-9]+.{3,}$",
     "headlines": {
       "feat": "Features",
       "fix": "Bug Fixes",
