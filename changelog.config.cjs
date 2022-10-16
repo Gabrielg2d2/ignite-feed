@@ -13,6 +13,11 @@ module.exports = {
   ],
   maxMessageLength: 64,
   minMessageLength: 8,
+  RegExp: {
+    BREAKING_CHANGE: /^BREAKING CHANGE: /,
+    BREAKING_CHANGE_FOOTER: /^BREAKING CHANGE: /,
+    COMMIT_EDITMSG: /^# [0-9a-f]{8} + [0-9]* + (.*) $/
+  },
   questions: [
     'type',
     'scope',
