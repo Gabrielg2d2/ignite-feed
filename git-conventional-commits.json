@@ -1,5 +1,5 @@
 {
-  "convention": {
+  "convention" : {
     "commitTypes": [
       "feat",
       "fix",
@@ -10,20 +10,24 @@
       "build",
       "ops",
       "docs",
-      "merge"
+      "chore",
+      "merge",
+      "revert"
     ],
     "commitScopes": [],
     "releaseTagGlobPattern": "v[0-9]*.[0-9]*.[0-9]*",
-    "issueRegexPattern": "(^|\\s)#\\d+(\\s|$)",
-    "commitRegexPattern": "^(\\w*)(?:\\((.*)\\))?!?: ^[^-]+-[0-9]+(?:-[0-9]+)? (.*)"
+    "issueRegexPattern": "(^|\\s)#\\d+(\\s|$)"
   },
 
-  "changelog": {
-    "commitTypes": ["feat", "fix", "perf", "merge"],
+  "changelog" : {
+    "commitTypes": [
+      "feat",
+      "fix",
+      "perf",
+      "merge"
+    ],
     "includeInvalidCommits": true,
-    "commitScopes": [],
     "commitIgnoreRegexPattern": "^WIP ",
-    "commitRegexPattern": "^(\\w*)(?:\\((.*)\\))?!?: ^[^-]+-[0-9]+(?:-[0-9]+)? : (.*)$",
     "headlines": {
       "feat": "Features",
       "fix": "Bug Fixes",
