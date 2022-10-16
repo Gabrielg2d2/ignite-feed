@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   disableEmoji: false,
   list: [
     'test',
