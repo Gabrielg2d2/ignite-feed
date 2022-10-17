@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1665889266027" clover="3.2.0">
-  <project timestamp="1665889266027" name="All files">
-    <metrics statements="18" coveredstatements="0" conditionals="3" coveredconditionals="0" methods="3" coveredmethods="0" elements="24" coveredelements="0" complexity="0" loc="18" ncloc="18" packages="1" files="3" classes="3"/>
+<coverage generated="1666033307601" clover="3.2.0">
+  <project timestamp="1666033307602" name="All files">
+    <metrics statements="17" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="0" elements="21" coveredelements="0" complexity="0" loc="17" ncloc="17" packages="1" files="2" classes="2"/>
     <file name="App.tsx" path="/home/g2d2/Documentos/Rocketseat/ignite-feed/src/App.tsx">
       <metrics statements="7" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
       <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
@@ -24,10 +24,6 @@
       <line num="8" count="0" type="stmt"/>
       <line num="9" count="0" type="stmt"/>
       <line num="10" count="0" type="stmt"/>
-    </file>
-    <file name="vite-env.d.ts" path="/home/g2d2/Documentos/Rocketseat/ignite-feed/src/vite-env.d.ts">
-      <metrics statements="1" coveredstatements="0" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
-      <line num="1" count="0" type="cond" truecount="0" falsecount="1"/>
     </file>
   </project>
 </coverage>
