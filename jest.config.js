@@ -1,6 +1,6 @@
 module.exports = {
   transformIgnorePatterns: ['/node_modules/', 'vite-env.d.ts'],
-  testMatch: ['**/?(*.integration.)+(spec|test).(js|jsx|ts|tsx)'],
+  testMatch: ['**/?(*.)+(spec|test).(js|jsx|ts|tsx)'],
   preset: 'ts-jest',
   clearMocks: true,
   collectCoverage: true,

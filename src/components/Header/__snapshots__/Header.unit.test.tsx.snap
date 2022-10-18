@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should render snapshot component Header 1`] = `
+<div>
+  <header
+    class="src-components-Header-header-RUooHIpSho"
+  >
+    <img
+      alt="Logotipo Ignite-lab"
+      src="ignite-logo.svg"
+    />
+    <strong>
+      Ignite Feed
+    </strong>
+  </header>
+</div>
+`;
