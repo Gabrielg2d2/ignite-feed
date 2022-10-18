@@ -1,8 +1,8 @@
 import { Header } from '../../components/Header'
 
-export function Home(): JSX.Element {
+export function PageHome(): JSX.Element {
   return (
-    <div>
+    <div data-testid="page-home">
       <Header />
     </div>
   )

@@ -1,9 +1,9 @@
-import { Home } from './pages/Home'
+import { PageHome } from './pages/Home'
 
 export function App(): JSX.Element {
   return (
     <div>
-      <Home />
+      <PageHome />
     </div>
   )
 }
