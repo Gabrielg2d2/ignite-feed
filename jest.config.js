@@ -5,7 +5,11 @@ module.exports = {
   clearMocks: true,
   collectCoverage: true,
   coverageDirectory: 'coverage',
-  collectCoverageFrom: ['src/**/*.(js|jsx|ts|tsx)?', '!src/**/*.d.ts'],
+  collectCoverageFrom: [
+    'src/**/*.(js|jsx|ts|tsx)?',
+    '!src/**/*.d.ts',
+    '!src/main.tsx'
+  ],
   coverageReporters: ['json', 'text', 'lcov', 'clover'],
   coverageProvider: 'v8',
   coverageThreshold: {
