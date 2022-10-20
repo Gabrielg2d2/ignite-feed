@@ -12,15 +12,6 @@
   background: var(--gray-800);
 }
 
-.avatar {
-  width: calc(3rem + 12px);
-  height: calc(3rem + 12px);
-  border-radius: 8px;
-  object-fit: cover;
-  border: 4px solid var(--gray-800);
-  outline: 2px solid var(--green-500);
-}
-
 .profile {
   display: flex;
   flex-direction: column;

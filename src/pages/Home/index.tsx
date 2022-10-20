@@ -1,8 +1,29 @@
+import { useState } from 'react'
 import { Header } from '../../components/Header'
+import { Post } from '../../components/Post'
 import { Sidebar } from '../../components/Sidebar'
+import { IPostProps } from '../../global/types/IPostProps'
+
 import styles from './Home.module.css'
 
+import { mockPosts } from '../../mocks/Posts'
+
 export function PageHome(): JSX.Element {
+  const [posts] = useState<IPostProps[]>(mockPosts)
+
+  const listPosts = posts.map((post) => (
+    <Post
+      key={post.id}
+      avatar={post.avatar}
+      username={post.username}
+      userProfession={post.userProfession}
+      userSite={post.userSite}
+      userHashtag={post.userHashtag}
+      publicationDate={post.publicationDate}
+      messagePost={post.messagePost}
+    />
+  ))
+
   return (
     <div data-testid="page-home">
       <Header />
@@ -10,21 +31,7 @@ export function PageHome(): JSX.Element {
       <div className={styles.wrapper}>
         <Sidebar />
 
-        <main>
-          <div>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptates, aliquam error aperiam, fugiat quos, commodi
-            necessitatibus eligendi odit tempore reiciendis illo unde magnam
-            adipisci? Modi qui recusandae id tenetur inventore.
-          </div>
-
-          <div>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptates, aliquam error aperiam, fugiat quos, commodi
-            necessitatibus eligendi odit tempore reiciendis illo unde magnam
-            adipisci? Modi qui recusandae id tenetur inventore.
-          </div>
-        </main>
+        <main>{listPosts}</main>
       </div>
     </div>
   )

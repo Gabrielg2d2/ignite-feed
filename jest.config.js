@@ -8,7 +8,8 @@ module.exports = {
   collectCoverageFrom: [
     'src/**/*.(js|jsx|ts|tsx)?',
     '!src/**/*.d.ts',
-    '!src/main.tsx'
+    '!src/main.tsx',
+    '!src/global/types/**/*'
   ],
   coverageReporters: ['json', 'text', 'lcov', 'clover'],
   coverageProvider: 'v8',
