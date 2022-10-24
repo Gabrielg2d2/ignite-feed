@@ -26,7 +26,9 @@ export function BodyComment({
             })}
           </time>
         </div>
-        <Trash size={24} />
+        <button className={styles.buttonDelete}>
+          <Trash size={24} />
+        </button>
       </div>
       <p className={styles.message}>{message}</p>
     </div>

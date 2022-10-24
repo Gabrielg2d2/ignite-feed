@@ -8,8 +8,10 @@ interface IActionComment {
 export function ActionComment({ likes }: IActionComment): JSX.Element {
   return (
     <div className={styles.actions}>
-      <ThumbsUp size={20} />
-      <span>Aplaudir - {likes}</span>
+      <button className={styles.buttonLike}>
+        <ThumbsUp size={20} />
+        <span>Aplaudir - {likes}</span>
+      </button>
     </div>
   )
 }
