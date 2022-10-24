@@ -17,7 +17,7 @@ export function Comment({
 }: ICommentProps): JSX.Element {
   return (
     <Container {...props}>
-      <Avatar src={avatar.src} alt={avatar.alt} />
+      <Avatar src={avatar.src} alt={avatar.alt} variant="secondary" />
 
       <div className={styles.content}>
         <BodyComment username={username} time={time} message={message} />
