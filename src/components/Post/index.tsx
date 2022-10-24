@@ -1,19 +1,8 @@
+import { IPostProps } from '../../global/types/IPostProps'
 import { Avatar } from '../Avatar'
+import { Comment } from '../Comment'
 
 import styles from './Post.module.css'
-
-interface IPostProps {
-  avatar?: {
-    src: string
-    alt: string
-  }
-  username: string
-  userProfession: string
-  userSite: string
-  userHashtag: string[]
-  publicationDate: string
-  messagePost: string
-}
 
 export function Post({
   avatar,
@@ -22,7 +11,8 @@ export function Post({
   userSite,
   userHashtag,
   publicationDate,
-  messagePost
+  messagePost,
+  comments
 }: IPostProps): JSX.Element {
   return (
     <article className={styles.post}>
@@ -65,6 +55,10 @@ export function Post({
           <button type="submit">Publicar</button>
         </footer>
       </form>
+
+      {comments.map((comment) => (
+        <Comment key={comment.id} {...comment} />
+      ))}
     </article>
   )
 }

@@ -21,6 +21,7 @@ export function PageHome(): JSX.Element {
       userHashtag={post.userHashtag}
       publicationDate={post.publicationDate}
       messagePost={post.messagePost}
+      comments={post.comments}
     />
   ))
 
