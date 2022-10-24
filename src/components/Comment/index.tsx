@@ -8,15 +8,15 @@ import { Container } from './components/Container'
 import styles from './Comment.module.css'
 
 export function Comment({
-  id,
   avatar,
   likes,
   message,
   time,
-  username
+  username,
+  ...props
 }: ICommentProps): JSX.Element {
   return (
-    <Container id={id}>
+    <Container {...props}>
       <Avatar src={avatar.src} alt={avatar.alt} />
 
       <div className={styles.content}>

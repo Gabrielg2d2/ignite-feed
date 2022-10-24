@@ -1,5 +1,5 @@
 export interface ICommentProps {
-  id: string
+  id?: string
   avatar: {
     src: string
     alt: string
@@ -11,7 +11,7 @@ export interface ICommentProps {
 }
 
 export interface IPostProps {
-  id: string
+  id?: string
   avatar?: {
     src: string
     alt: string
