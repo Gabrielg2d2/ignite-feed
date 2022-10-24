@@ -13,13 +13,14 @@ describe('Post', () => {
 
   it('should render correctly component Post no attributes avatar', () => {
     const user = {
-      id: 1,
+      id: '1',
       username: 'user-name-test',
       userProfession: 'user-profession-test',
       userSite: 'user-site-test',
       userHashtag: ['user-hashtag-test', 'user-hashtag-test-2'],
       publicationDate: '2021-08-01T00:00:00.000Z',
-      messagePost: 'user-message-post-test'
+      messagePost: 'user-message-post-test',
+      comments: []
     }
 
     render(<Post {...user} />)
@@ -33,7 +34,7 @@ describe('Post', () => {
 
   it('should render correctly component Post with attributes', () => {
     const user = {
-      id: 1,
+      id: '1',
       avatar: {
         src: 'https://avatars.githubusercontent.com/u/663432?v=4',
         alt: 'test user alt image'
@@ -43,7 +44,8 @@ describe('Post', () => {
       userSite: 'user-site-test',
       userHashtag: ['user-hashtag-test', 'user-hashtag-test-2'],
       publicationDate: '2021-08-01T00:00:00.000Z',
-      messagePost: 'user-message-post-test'
+      messagePost: 'user-message-post-test',
+      comments: []
     }
 
     render(<Post {...user} />)

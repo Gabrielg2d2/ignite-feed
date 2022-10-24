@@ -12,7 +12,7 @@ export interface ICommentProps {
 
 export interface IPostProps {
   id: string
-  avatar: {
+  avatar?: {
     src: string
     alt: string
   }
