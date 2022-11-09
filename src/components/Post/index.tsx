@@ -1,4 +1,5 @@
 import { IPostProps } from '../../global/types/IPostProps'
+import { formatPublishDate } from '../../global/utils/formatPublishDate'
 import { Avatar } from '../Avatar'
 import { Comment } from '../Comment'
 
@@ -26,7 +27,9 @@ export function Post({
           </div>
         </div>
 
-        <time dateTime={publicationDate}>Publicado em {publicationDate}</time>
+        <time dateTime={publicationDate}>
+          Publicado em {formatPublishDate(publicationDate)}
+        </time>
       </header>
 
       <div className={styles.content}>
