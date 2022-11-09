@@ -11,12 +11,12 @@
     "commit": "git-cz",
     "prepare": "husky install",
     "test": "jest --passWithNoTests",
-    "test:watch": "jest --watchAll --passWithNoTests",
-    "test:unit": "jest --config=jest-unit.config.js",
-    "test:unit:watch": "jest --config=jest-unit.config.js --watchAll",
-    "test:integration": "jest --config=jest-integration.config.js",
-    "test:integration:watch": "jest --config=jest-integration.config.js --watchAll",
-    "test:cov": "jest --coverage --passWithNoTests"
+    "test:watch": "npm run test -- --watchAll",
+    "test:unit": "npm run test -- --config=jest-unit.config.js",
+    "test:unit:watch": "npm run test:watch -- --config=jest-unit.config.js",
+    "test:integration": "npm run test -- --config=jest-integration.config.js",
+    "test:integration:watch": "npm run test:watch -- --config=jest-integration.config.js",
+    "test:cov": "npm run test -- --coverage"
   },
   "dependencies": {
     "phosphor-react": "^1.4.1",
