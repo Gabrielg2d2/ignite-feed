@@ -1,5 +1,6 @@
 export interface ICommentProps {
   id?: string
+  idPost?: string
   avatar: {
     src: string
     alt: string
