@@ -1,7 +1,7 @@
 export interface ICommentProps {
   id?: string
   idPost?: string
-  avatar: {
+  avatar?: {
     src: string
     alt: string
   }
@@ -23,5 +23,4 @@ export interface IPostProps {
   userHashtag: string[]
   publicationDate: string
   messagePost: string
-  comments: ICommentProps[]
 }

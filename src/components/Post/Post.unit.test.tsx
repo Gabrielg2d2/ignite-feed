@@ -1,4 +1,7 @@
+import { ReactElement, JSXElementConstructor } from 'react'
 import { render, screen } from '@testing-library/react'
+import userEvent from '@testing-library/user-event'
+
 import { Post } from '.'
 import { mockPosts } from '../../mocks/Posts'
 
@@ -71,5 +74,39 @@ describe('Post', () => {
       'datetime',
       '2021-08-01T00:00:00.000Z'
     )
+  })
+})
+
+describe('Post - userEven', () => {
+  // setup function
+  // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
+  function setup(jsx: ReactElement<any, string | JSXElementConstructor<any>>) {
+    return {
+      user: userEvent.setup(),
+      ...render(jsx)
+    }
+  }
+
+  it('should submit in form comment', async () => {
+    const { user } = setup(<Post {...mockPosts[0]} />)
+
+    const elementForm = screen.getByRole('form', { name: /form comment/i })
+    const elementTextArea = screen.getByRole('textbox')
+
+    expect(elementForm).toBeInTheDocument()
+    expect(elementTextArea).toBeInTheDocument()
+
+    await user.type(elementTextArea, 'test comment 123')
+    expect(elementTextArea).toHaveValue('test comment 123')
+
+    const elementButtonSubmit = screen.getByTestId('button_submit_form_comment')
+    expect(elementButtonSubmit).toBeInTheDocument()
+
+    await user.click(elementButtonSubmit)
+
+    screen.debug()
+
+    // expect(elementTextArea).toHaveValue('')
+    // expect(elementButtonSubmit).not.toBeInTheDocument()
   })
 })

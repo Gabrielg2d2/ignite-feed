@@ -8,7 +8,10 @@ import { Container } from './components/Container'
 import styles from './Comment.module.css'
 
 export function Comment({
-  avatar,
+  avatar = {
+    src: '',
+    alt: ''
+  },
   likes,
   message,
   time,
