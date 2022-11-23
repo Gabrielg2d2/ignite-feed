@@ -44,13 +44,6 @@ describe('Avatar', () => {
       />
     )
 
-    // expect(
-    //   screen.getByRole('img', { name: /test user alt image/i })
-    // ).toHaveProperty(
-    //   'className',
-    //   'src-components-Avatar-avatarSecondary-Vg5B3dQRHK'
-    // )
-
     expect(
       screen.getByRole('img', { name: /test user alt image/i })
     ).toHaveStyle({
