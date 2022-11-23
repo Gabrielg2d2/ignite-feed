@@ -1,19 +1,11 @@
 import { Header } from '../../components/Header'
-import { Post } from '../../components/Post'
 import { Sidebar } from '../../components/Sidebar'
-import { IPostProps } from '../../global/types/IPostProps'
-import { useGetPosts } from '../../useCases/getPosts/intex'
+import { usePageHome } from './hook/usePageHome'
 
 import styles from './Home.module.css'
 
-function listPostsRender(posts: IPostProps[]): JSX.Element[] {
-  return posts.map((post) => <Post key={post.id} {...post} />)
-}
-
 export function PageHome(): JSX.Element {
-  const { posts } = useGetPosts()
-
-  const listPosts = listPostsRender(posts)
+  const { listPosts } = usePageHome()
 
   return (
     <div data-testid="page-home">
