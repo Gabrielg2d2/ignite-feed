@@ -12,8 +12,6 @@ function listPostsRender(posts: IPostProps[]): JSX.Element[] {
 
 export function usePageHome(): IUsePageHomeReturn {
   const { posts } = useGetPosts()
-
   const listPosts = listPostsRender(posts)
-
   return { listPosts }
 }
