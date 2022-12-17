@@ -1,5 +1,5 @@
 import { IPostProps } from '../../../../global/types/IPostProps'
-import { useGetPosts } from '../../../../useCases/getPosts'
+import { useGetPosts } from '../../../../useCases/useGetPosts'
 import { Post } from '../../../../components/Post'
 
 interface IUsePageHomeReturn {

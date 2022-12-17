@@ -1,17 +1,23 @@
-import { useEffect, useState } from 'react'
+import { Dispatch } from 'react'
+import { api } from '../../service/api'
 import { IPostProps } from '../../global/types/IPostProps'
-import { getPosts } from '../../global/utils/getPosts'
 
-interface IUserGetPosts {
-  posts: IPostProps[]
+interface IGetPosts {
+  setPost: Dispatch<IPostProps[]>
+  apiGet?: typeof api.get
 }
 
-export function useGetPosts(): IUserGetPosts {
-  const [posts, setPost] = useState<IPostProps[]>([])
+export async function getPosts({
+  setPost,
+  apiGet = api.get
+}: IGetPosts): Promise<void> {
+  try {
+    const response = await apiGet<IPostProps[]>('/posts')
 
-  useEffect(() => {
-    void (async () => await getPosts({ setPost }))()
-  }, [])
-
-  return { posts }
+    if (response.status === 200) {
+      setPost(response.data)
+    }
+  } catch (error) {
+    setPost([])
+  }
 }
