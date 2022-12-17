@@ -4,7 +4,7 @@ import { formatPublishDate } from '../../global/utils/formatPublishDate'
 import { postNewComment } from '../../useCases/postNewComment'
 import { Avatar } from '../Avatar'
 import { Comment } from '../Comment'
-import { handleCreateNewComment } from './functions/handleCreateNewComment'
+import { handleCreateNewComment as handleCreateNewCommentSpy } from './functions/handleCreateNewComment'
 import { searchCommentsByPostId } from './functions/searchCommentsByPostId'
 import { usePost } from './hooks/usePost'
 
@@ -18,7 +18,8 @@ export function Post({
   userSite,
   userHashtag,
   publicationDate,
-  messagePost
+  messagePost,
+  handleCreateNewComment = handleCreateNewCommentSpy
 }: IPostProps): JSX.Element {
   const { comments, setComments } = usePost({ id })
   const [newComment, setNewComment] = useState('')
@@ -66,6 +67,7 @@ export function Post({
         aria-label="form comment"
         // eslint-disable-next-line @typescript-eslint/no-misused-promises
         onSubmit={async (event) =>
+          // eslint-disable-next-line @typescript-eslint/return-await
           await handleCreateNewComment({
             event,
             id,

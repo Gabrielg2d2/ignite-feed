@@ -9,6 +9,23 @@ interface ISetupReturnProps {
   user: UserEvent
 }
 
+jest.mock('../../useCases/postNewComment', () => ({
+  postNewComment: jest.fn().mockImplementation((newComment) => {
+    return newComment
+  })
+}))
+
+jest.mock('./functions/searchCommentsByPostId', () => ({
+  searchCommentsByPostId: jest.fn().mockImplementation((id) => {
+    return []
+  })
+}))
+
+const handleCreateNewCommentSpy = jest.fn().mockImplementation((objSpy) => {
+  objSpy.postNewComment(objSpy.id, objSpy.newComment)
+  objSpy.setNewComment('')
+})
+
 describe('Post - integration', () => {
   function setup(
     jsx: ReactElement<any, string | JSXElementConstructor<any>>
@@ -20,7 +37,12 @@ describe('Post - integration', () => {
   }
 
   it('should enter a value in the comment field and submit the form', async () => {
-    const { user } = setup(<Post {...mockPosts[0]} />)
+    const { user } = setup(
+      <Post
+        handleCreateNewComment={handleCreateNewCommentSpy}
+        {...mockPosts[0]}
+      />
+    )
 
     const elementForm = screen.getByRole('form', { name: /form comment/i })
     const elementTextArea = screen.getByRole('textbox')

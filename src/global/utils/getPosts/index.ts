@@ -10,17 +10,13 @@ interface IGetPosts {
 export async function getPosts({
   setPost,
   apiGet = api.get
-}: IGetPosts): Promise<IPostProps[] | undefined> {
+}: IGetPosts): Promise<void> {
   try {
     const response = await apiGet<IPostProps[]>('/posts')
 
-    const data = response.data ?? []
-
     if (response.status === 200) {
-      setPost(data)
+      setPost(response.data)
     }
-
-    return data
   } catch (error) {
     setPost([])
   }

@@ -23,4 +23,5 @@ export interface IPostProps {
   userHashtag: string[]
   publicationDate: string
   messagePost: string
+  handleCreateNewComment: any
 }

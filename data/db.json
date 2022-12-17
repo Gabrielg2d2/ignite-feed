@@ -9,11 +9,7 @@
       "username": "Lucas Santos",
       "userProfession": "Desenvolvedor Front-end",
       "userSite": "www.lucassantos.dev",
-      "userHashtag": [
-        "#react",
-        "#typescript",
-        "#nextjs"
-      ],
+      "userHashtag": ["#react", "#typescript", "#nextjs"],
       "publicationDate": "2021-08-01T00:00:00.000Z",
       "messagePost": "Acabei de subir mais um projeto no meu portfólio. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀"
     },
@@ -26,171 +22,10 @@
       "username": "Maria Silva",
       "userProfession": "Desenvolvedor Back-end",
       "userSite": "www.mariasilva.dev",
-      "userHashtag": [
-        "#nodejs",
-        "#typescript",
-        "#C#"
-      ],
+      "userHashtag": ["#nodejs", "#typescript", "#C#"],
       "publicationDate": "2021-08-01T00:00:00.000Z",
       "messagePost": "Acabei de subir mais um projeto no meu portfólio. É um projeto que fiz no NLW Return, evento da Rocketseat. O nome do projeto é DoctorCare 🚀Portfólio finalmente pronto 🚀"
     }
   ],
-  "comments": [
-    {
-      "idpost": "1",
-      "avatar": {
-        "src": "https://avatars.githubusercontent.com/u/101529710?v=4",
-        "alt": "Avatar do usuário"
-      },
-      "username": "Lucas Santos",
-      "time": "2021-08-01T00:00:00.000Z",
-      "message": "test comment 123",
-      "likes": 0,
-      "id": 1
-    },
-    {
-      "idpost": "1",
-      "avatar": {
-        "src": "https://avatars.githubusercontent.com/u/101529710?v=4",
-        "alt": "Avatar do usuário"
-      },
-      "username": "Lucas Santos",
-      "time": "2021-08-01T00:00:00.000Z",
-      "message": "test comment 123",
-      "likes": 0,
-      "id": 2
-    },
-    {
-      "idpost": "1",
-      "avatar": {
-        "src": "https://avatars.githubusercontent.com/u/101529710?v=4",
-        "alt": "Avatar do usuário"
-      },
-      "username": "Lucas Santos",
-      "time": "2021-08-01T00:00:00.000Z",
-      "message": "test comment 123",
-      "likes": 0,
-      "id": 3
-    },
-    {
-      "idpost": "1",
-      "avatar": {
-        "src": "https://avatars.githubusercontent.com/u/101529710?v=4",
-        "alt": "Avatar do usuário"
-      },
-      "username": "Lucas Santos",
-      "time": "2021-08-01T00:00:00.000Z",
-      "message": "test comment 123",
-      "likes": 0,
-      "id": 4
-    },
-    {
-      "idpost": "1",
-      "avatar": {
-        "src": "https://avatars.githubusercontent.com/u/101529710?v=4",
-        "alt": "Avatar do usuário"
-      },
-      "username": "Lucas Santos",
-      "time": "2021-08-01T00:00:00.000Z",
-      "message": "test comment 123",
-      "likes": 0,
-      "id": 5
-    },
-    {
-      "idpost": "1",
-      "avatar": {
-        "src": "https://avatars.githubusercontent.com/u/101529710?v=4",
-        "alt": "Avatar do usuário"
-      },
-      "username": "Lucas Santos",
-      "time": "2021-08-01T00:00:00.000Z",
-      "message": "test comment 123",
-      "likes": 0,
-      "id": 6
-    },
-    {
-      "idpost": "1",
-      "avatar": {
-        "src": "https://avatars.githubusercontent.com/u/101529710?v=4",
-        "alt": "Avatar do usuário"
-      },
-      "username": "Lucas Santos",
-      "time": "2021-08-01T00:00:00.000Z",
-      "message": "test comment 123",
-      "likes": 0,
-      "id": 7
-    },
-    {
-      "idpost": "1",
-      "avatar": {
-        "src": "https://avatars.githubusercontent.com/u/101529710?v=4",
-        "alt": "Avatar do usuário"
-      },
-      "username": "Lucas Santos",
-      "time": "2021-08-01T00:00:00.000Z",
-      "message": "test comment 123",
-      "likes": 0,
-      "id": 8
-    },
-    {
-      "idpost": "1",
-      "avatar": {
-        "src": "https://avatars.githubusercontent.com/u/101529710?v=4",
-        "alt": "Avatar do usuário"
-      },
-      "username": "Lucas Santos",
-      "time": "2021-08-01T00:00:00.000Z",
-      "message": "test comment 123",
-      "likes": 0,
-      "id": 9
-    },
-    {
-      "idpost": "1",
-      "avatar": {
-        "src": "https://avatars.githubusercontent.com/u/101529710?v=4",
-        "alt": "Avatar do usuário"
-      },
-      "username": "Lucas Santos",
-      "time": "2021-08-01T00:00:00.000Z",
-      "message": "test comment 123",
-      "likes": 0,
-      "id": 10
-    },
-    {
-      "idpost": "1",
-      "avatar": {
-        "src": "https://avatars.githubusercontent.com/u/101529710?v=4",
-        "alt": "Avatar do usuário"
-      },
-      "username": "Lucas Santos",
-      "time": "2021-08-01T00:00:00.000Z",
-      "message": "test comment 123",
-      "likes": 0,
-      "id": 11
-    },
-    {
-      "idpost": "1",
-      "avatar": {
-        "src": "https://avatars.githubusercontent.com/u/101529710?v=4",
-        "alt": "Avatar do usuário"
-      },
-      "username": "Lucas Santos",
-      "time": "2021-08-01T00:00:00.000Z",
-      "message": "test comment 123",
-      "likes": 0,
-      "id": 12
-    },
-    {
-      "idpost": "1",
-      "avatar": {
-        "src": "https://avatars.githubusercontent.com/u/101529710?v=4",
-        "alt": "Avatar do usuário"
-      },
-      "username": "Lucas Santos",
-      "time": "2021-08-01T00:00:00.000Z",
-      "message": "test comment 123",
-      "likes": 0,
-      "id": 13
-    }
-  ]
+  "comments": []
 }
