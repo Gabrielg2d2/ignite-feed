@@ -21,4 +21,4 @@ Differentiating from this project, I set a personal challenge to cover 100% with
 
 <img src="./public/doc/feed.png">
 
-<img src="https://github.com/Gabrielg2d2/ignite-feed/blob/master/public/doc/coverage.png?raw=true">
+<img src="./public/doc/coverage.png">
